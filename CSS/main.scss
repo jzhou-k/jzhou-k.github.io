@@ -1,1 +1,78 @@
 //hello???? 
+
+//imports from google.com/fonts. 700, 400, 300
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto Mono', arial; //putting in arial as a fall back font 
+    
+}
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 20;
+}
+a
+{
+    text-decoration: none;
+}
+img
+{
+    width: 100%;
+}
+
+//making navigation bar
+//its class so give period  
+.nav-container{
+    background: #F2F2F2;
+    a{
+        color: #0D0D0D;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    
+    .logo{
+        font-size: xx-large;
+        font-weight: 700;
+        line-height: 0px; // im using the same line height for logo and ul so they line up 
+        
+    }
+    
+    nav{
+        ul{
+            display: flex;
+            line-height: 0px;
+            padding-right: 2em;
+            a{
+                display: block;
+                padding: 0 1em;
+            }
+        }
+
+    }
+}
+
+.hero
+{
+    background: #F2F2F2;
+    display: grid;
+    text-align: left;
+    .content{
+        h1{
+            padding-left: 1em;
+        }
+        p{
+            padding-left: 2em;
+        }
+    }
+}
+
+
