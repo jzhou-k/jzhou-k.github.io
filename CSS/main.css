@@ -49,11 +49,14 @@ header nav ul a {
 .hero {
   background: #F2F2F2;
   display: grid;
+}
+.hero .content {
+  position: relative;
   text-align: left;
+  color: #F2F2F2;
 }
-.hero .content h1 {
-  padding-left: 1em;
-}
-.hero .content p {
-  padding-left: 2em;
+.hero .botleft-intro {
+  position: absolute;
+  bottom: 100px;
+  left: 60px;
 }/*# sourceMappingURL=main.css.map */

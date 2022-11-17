@@ -64,15 +64,19 @@ header{
 {
     background: #F2F2F2;
     display: grid;
-    text-align: left;
+
     .content{
-        h1{
-            padding-left: 1em;
-        }
-        p{
-            padding-left: 2em;
-        }
+        position: relative;
+        text-align: left;
+        color: #F2F2F2;
     }
+
+    .botleft-intro{
+        position: absolute;
+        bottom: 100px;
+        left: 60px;
+    }
+   
 }
 
 
