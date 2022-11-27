@@ -27,6 +27,11 @@ img {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
   display: flex;
   justify-content: space-between;
   padding: 2em;
@@ -39,7 +44,7 @@ header .logo {
 header nav ul {
   display: flex;
   line-height: 0px;
-  padding-right: 2em;
+  padding-right: 5em;
 }
 header nav ul a {
   display: block;
@@ -47,16 +52,32 @@ header nav ul a {
 }
 
 .hero {
-  background: #F2F2F2;
-  display: grid;
-}
-.hero .content {
   position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: left;
+  align-items: center;
+  background: url("happy_doggie.png");
+  background-size: cover;
+  background-color: #cccccc;
+  padding-left: 3em;
+}
+
+.hero.content {
   text-align: left;
+}
+
+.hero .content h1 {
+  position: absolute;
+  top: 70%;
+  font-size: 5em;
   color: #F2F2F2;
 }
-.hero .botleft-intro {
+
+.hero .content p {
   position: absolute;
-  bottom: 100px;
-  left: 60px;
+  top: 80%;
+  font-size: 1em;
+  color: #F2F2F2;
 }/*# sourceMappingURL=main.css.map */

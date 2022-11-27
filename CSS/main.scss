@@ -35,6 +35,12 @@ img
 }
 
 header{
+    position: fixed;
+
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 10000;
     display: flex;
     justify-content: space-between;
     padding: 2em;
@@ -50,7 +56,7 @@ header{
         ul{
             display: flex;
             line-height: 0px;
-            padding-right: 2em;
+            padding-right: 5em;
             a{
                 display: block;
                 padding: 0 1em;
@@ -60,23 +66,47 @@ header{
     }
 }
 
+
+
 .hero
+{   
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: left;
+    align-items:center;
+    background: url("happy_doggie.png");
+    background-size: cover;
+    background-color: #cccccc;
+    padding-left: 3em;
+}
+
+.hero.content
 {
-    background: #F2F2F2;
-    display: grid;
+    text-align: left;
+}
 
-    .content{
-        position: relative;
-        text-align: left;
-        color: #F2F2F2;
-    }
+.hero .content h1
+{
+    position: absolute;
+    top: 70%;
+    font-size: 5em;
+    color: #F2F2F2;
+}
 
-    .botleft-intro{
-        position: absolute;
-        bottom: 100px;
-        left: 60px;
-    }
-   
+.hero .content p 
+{
+    position: absolute;
+    top: 80%; //85 
+    font-size: 1em;
+    color: #F2F2F2;
+}
+
+//FUCK 
+.btn
+{
+
 }
 
 
