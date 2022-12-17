@@ -8,6 +8,12 @@ body{
     margin: 0;
     font-family: 'Roboto Mono', arial; //putting in arial as a fall back font 
     
+    //this shit don't work when I put it under ID, looks like i gotta have 2 separate css files FUCK
+    #main-page{
+        height: 100%; overflow: hidden; // disables scrolling 
+    }
+    cursor: pointer;
+    background-color: #F2F2F2;
 }
 
 ul
@@ -32,6 +38,16 @@ img
     a{
         color: #0D0D0D;
     }
+    /*
+    .nav-bar{
+        height: 30%;
+        width: 100%;
+        position:absolute;
+        top: 0pt;
+        right: 0pt;
+        background-color: #F2F2F2;
+    }
+    */
 }
 
 header{
@@ -40,10 +56,11 @@ header{
     top: 0; 
     left: 0;
     width: 100%;
-    z-index: 10000;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     padding: 2em;
+    background-color: #F2F2F2;
     
     .logo{
         font-size: xx-large;
@@ -76,37 +93,50 @@ header{
     min-height: 100vh;
     justify-content: left;
     align-items:center;
-    background: url("happy_doggie.png");
+    background: url("../Images/happy_doggie.png"); //path is relative to the css file not html
     background-size: cover;
     background-color: #cccccc;
     padding-left: 3em;
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* start the image from bottom*/
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+
+    .content
+    {
+        text-align: left;
+        position: absolute;
+        top: 60%;
+        font-size: 5em;
+        font:400;
+        color: #F2F2F2;
+        line-height: 0%;
+        p {
+            font-size: large;
+            position: relative;
+            left: 2em;
+        }
+    }
+
+   
 }
 
-.hero.content
-{
-    text-align: left;
+.art-content
+{    
+    position: relative;
+    left: 10em;
+    top: 5em;
+    .illustrations
+    {
+        position: relative;
+        left:3em;
+    }
 }
+    
+    
+    
 
-.hero .content h1
-{
-    position: absolute;
-    top: 70%;
-    font-size: 5em;
-    color: #F2F2F2;
-}
 
-.hero .content p 
-{
-    position: absolute;
-    top: 80%; //85 
-    font-size: 1em;
-    color: #F2F2F2;
-}
-
-//FUCK 
-.btn
-{
-
-}
 
 
