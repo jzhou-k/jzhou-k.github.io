@@ -4,36 +4,22 @@ body {
   font-family: "Roboto Mono", arial;
   background-color: #F2F2F2;
   height: 100%;
-  overflow-x: hidden;
 }
-a {
-  text-decoration: none;
-}
-
-
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 20;
   }
-
-  .nav-container {
-    background: #F2F2F2;
-    /*
-    .nav-bar{
-        height: 30%;
-        width: 100%;
-        position:absolute;
-        top: 0pt;
-        right: 0pt;
-        background-color: #F2F2F2;
-    }
-    */
+  
+  a {
+    text-decoration: none;
   }
-  .nav-container a {
-    color: #0D0D0D;
+  
+  img {
+    width: 100%;
   }
+  
   .nav-container {
     background: #F2F2F2;
     /*
@@ -76,54 +62,30 @@ ul {
     display: block;
     padding: 0 1em;
   }
-  
-  
 
 
+  .yes
+  {
+      position: relative;
+      margin-top: 20em;
+  }
 
-.art-content {
-    position: relative; 
-    width: 100%; 
-    top: 40px;
-    box-sizing: border-box;
-   
-}
-
-.art-content .row {
+.section 
+{
+    /* apparently if you set position relative on a flex box thing, 
+    it will just fill up the moved space */
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 0 4px;
     width: 100%;
     justify-content: center;
 }
 
-.col {
+.col
+{
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-
-}
-
-.col img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
 }
 
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .col {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .col {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-  
