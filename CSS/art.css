@@ -2,20 +2,128 @@
 body {
   margin: 0;
   font-family: "Roboto Mono", arial;
-  cursor: pointer;
   background-color: #F2F2F2;
   height: 100%;
-  
+  overflow-x: hidden;
 }
+a {
+    text-decoration: none;
+  }
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20;
+  }
+
+  .nav-container {
+    background: #F2F2F2;
+    /*
+    .nav-bar{
+        height: 30%;
+        width: 100%;
+        position:absolute;
+        top: 0pt;
+        right: 0pt;
+        background-color: #F2F2F2;
+    }
+    */
+  }
+  .nav-container a {
+    color: #0D0D0D;
+  }
+  .nav-container {
+    background: #F2F2F2;
+    /*
+    .nav-bar{
+        height: 30%;
+        width: 100%;
+        position:absolute;
+        top: 0pt;
+        right: 0pt;
+        background-color: #F2F2F2;
+    }
+    */
+  }
+  .nav-container a {
+    color: #0D0D0D;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: #F2F2F2;
+  }
+  header .logo {
+    font-size: xx-large;
+    font-weight: 700;
+    line-height: 0px;
+  }
+  header nav ul {
+    display: flex;
+    line-height: 0px;
+    padding-right: 5em;
+  }
+  header nav ul a {
+    display: block;
+    padding: 0 1em;
+  }
+  
+  
 
 
 
 .art-content {
-    position: relative;
-    left: 10em;
-    top: 5em;
-  }
-.art-content .illustrations {
-    position: relative;
-    left: 3em;
+    position: relative; 
+    width: 100%; 
+    top: 40px;
+    box-sizing: border-box;
+   
 }
+
+.art-content .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 100%;
+    justify-content: center;
+}
+
+.col {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+
+}
+
+.col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .col {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
