@@ -1,28 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap");
+
 body {
   margin: 0;
-  font-family: "Roboto Mono", arial;
+  font-family: Georgia, 'Times New Roman', Times, serif, arial;
   background-color: #F2F2F2;
   height: 100%;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 20;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  img {
-    width: 100%;
-  }
-  
-  .nav-container {
-    background: #F2F2F2;
-    /*
+  list-style-type: none;
+  margin: 0;
+  padding: 20;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.nav-container {
+  background: #F2F2F2;
+  /*
     .nav-bar{
         height: 30%;
         width: 100%;
@@ -32,60 +30,85 @@ ul {
         background-color: #F2F2F2;
     }
     */
-  }
-  .nav-container a {
-    color: #0D0D0D;
-  }
-  
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    padding: 2em;
-    background-color: #F2F2F2;
-  }
-  header .logo {
-    font-size: xx-large;
-    font-weight: 700;
-    line-height: 0px;
-  }
-  header nav ul {
-    display: flex;
-    line-height: 0px;
-    padding-right: 5em;
-  }
-  header nav ul a {
-    display: block;
-    padding: 0 1em;
-  }
+}
+
+.nav-container a {
+  color: #0D0D0D;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  background-color: #F2F2F2;
+  box-shadow: 0px 0px 10px rgb(148, 148, 148);
+}
+
+header .logo {
+  font-size: xx-large;
+  font-weight: 700;
+  line-height: 0px;
+}
+
+header nav ul {
+  display: flex;
+  line-height: 0px;
+  padding-right: 5em;
+}
+
+header nav ul a {
+  display: block;
+  padding: 0 1em;
+}
 
 
-  .yes
-  {
-      position: relative;
-      margin-top: 20em;
-  }
+/*
+  why the fuck is this working??? 
+  */
+
+.yes {
+  display: flex; 
+  margin-top: 5em;
+}
 
 .section 
-{
-    /* apparently if you set position relative on a flex box thing, 
-    it will just fill up the moved space */
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 0 4px;
-    width: 100%;
-    justify-content: center;
+{ 
+  font-size: large;
+  margin-top: 8em;
+  width: 50%;
+  justify-content: right;
+
 }
 
-.col
+img 
 {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+  
+  width: 50%;
+  height: 50em;
+  object-fit: scale-down;
+
 }
 
+.yes li {
+  text-decoration: none;
+  list-style: none;
+  margin-bottom: 5em;
+  display: flex;
+  justify-content: left;
+  width: 100%;
 
+}
+
+li .content {
+  max-width: 50%;
+}
+
+.label {
+  width: 200px;
+  box-sizing: border-box;
+}
