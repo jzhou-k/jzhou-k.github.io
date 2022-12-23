@@ -141,6 +141,11 @@ hr
     width: 100%;
 }
 
+.col img:hover {
+  transform:scale(1.1);
+}
+
+
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent; /* make scrollbar transparent */

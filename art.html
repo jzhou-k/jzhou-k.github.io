@@ -5,7 +5,21 @@
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/art.css"> <!-- I'm gonna kms -->
+    <link rel = "stylesheet" href = "/CSS/lightbox.min.css"> 
     <script src="script/scroll.js"></script>
+    <script src = "script/lightbox-plus-jquery.min.js"></script> 
+
+    <script> 
+        lightbox.option({
+            'resizeDuration': 50,
+            'imageFadeDuration': 100
+
+
+        })
+    
+    </script>
+
+
 </head>
 
 <body>
@@ -37,7 +51,7 @@
         <div class = "title">
             Illustrations
             <span> 
-                short description of what this is, this is for decoration reasons lol
+                digital illustration done over the years
             </span>
             <hr>
         </div>
@@ -46,22 +60,40 @@
 
 
             <div class = "col">
-                <img src = "Images/wednesday and enid final.jpg"> 
+                <a href = "Images/wednesday and enid final.jpg" data-lightbox = "mygallery">
+                    <img src = "Images/wednesday and enid final.jpg"> 
+                </a>
+                <a href = "Images/flame.png" data-lightbox = "mygallery">
                 <img src = "Images/flame.png">
-                
+                </a>
             </div>
 
             <div class = "col">
-                <img src = "Images/commission1.png">
-               
+                <a href = "Images/commission1.png" data-lightbox = "mygallery">
+                <img src = "Images/commission1.png"> 
+                </a>
+                <a href = "Images/Monke.png"data-lightbox = "mygallery">
                 <img src = "Images/Monke.png">
-                <img src="Images/Barcode.png">
+                </a>
+                <a href = "Images/Barcode.png"data-lightbox = "mygallery">
+                    <img src="Images/Barcode.png">
+                </a>
+                
             </div>
           
             <div class = "col">
-                <img src = "Images/happy_doggie.png">
-                <img src = "Images/SaulGoodman.png">
-                <img src = "Images/snow.png">
+                <a href = "Images/happy_doggie.png"data-lightbox = "mygallery">
+                    <img src = "Images/happy_doggie.png">
+                </a>
+                
+                <a href = "Images/SaulGoodman.png"data-lightbox = "mygallery">
+                    <img src = "Images/SaulGoodman.png">
+                </a>
+                
+                <a href = "Images/snow.png"data-lightbox = "mygallery">
+                    <img src = "Images/snow.png">
+                </a>
+                
                 
             </div>
         </div> 
