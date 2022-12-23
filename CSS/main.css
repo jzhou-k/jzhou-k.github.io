@@ -97,3 +97,35 @@ header nav ul a {
   left: 2em;
 }
 
+
+@media screen and (max-width: 1000px) {
+
+  .hero h1 
+  {
+    font-size: 1em;
+  }
+  
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+  .hero
+  {
+    width: 100%;
+  }
+
+  .hero .content
+  {
+    position: relative;
+    height: auto;
+  }
+
+  .hero h1 
+  {
+    overflow-wrap: break-word; 
+    line-height: 1em;
+  }
+  
+}

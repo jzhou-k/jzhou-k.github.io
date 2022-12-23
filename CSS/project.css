@@ -47,7 +47,7 @@ header {
     justify-content: space-between;
     padding: 2em;
     background-color: #F2F2F2;
-    box-shadow: 0px 0px 10px rgb(148, 148, 148);
+
 }
 
 header .logo {
@@ -77,26 +77,23 @@ h2 {
 
 }
 
-.project 
-{
+.project {
     margin-top: 5em;
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    
+
 }
 
-.title 
-{
-  font-size: 5em;
-  font-weight: 800;
-  width: 75%;
-  justify-content: left;
+.title {
+    font-size: 5em;
+    font-weight: 800;
+    width: 75%;
+    justify-content: left;
 }
 
-.title span 
-{
+.title span {
     font-size: medium;
     font-weight: 500;
     font-style: italic;
@@ -104,29 +101,25 @@ h2 {
     margin-left: 0px;
 }
 
-hr
-{
+hr {
     margin: 0%;
     margin-top: 10px;
 }
 
-img
-{
+img {
     object-fit: cover;
     max-height: 300px;
 }
 
-.card ul
-{
-    display: flex; 
-    margin: 10px; 
+.card ul {
+    display: flex;
+    margin: 10px;
     margin-left: 25px;
     padding: 0;
- 
+
 }
 
-.card li
-{ 
+.card li {
     text-decoration: none;
     list-style: none;
     justify-content: left;
@@ -134,15 +127,45 @@ img
     padding: 10px;
     border: 2px solid #0D0D0D;
     border-radius: 10px;
-  
+
 }
 
-.card 
-{
+.card {
     width: 35%;
     border: 3px solid #0D0D0D;
     border-radius: 10px;
     margin-top: 2em;
-    background-color:rgb(246, 246, 246);
+    background-color: rgb(246, 246, 246);
 }
 
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
+
+
+@media screen and (max-width: 800px) {
+    .card {
+        flex: 100%;
+        width: 80%;
+    }
+}
+
+
+
+html:not([data-scroll='0']) header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: #F2F2F2;
+    /*box-shadow: 0 0 .5em rgba(0, 0, 0, .5); */
+    box-shadow: 0px 0px 10px rgb(148, 148, 148);
+}
