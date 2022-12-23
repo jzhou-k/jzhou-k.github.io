@@ -72,7 +72,7 @@ header nav ul a {
   width: 100%;
   min-height: 100vh;
   justify-content: left;
-  align-items: center;
+  align-items:flex-end;
   background: url("../Images/happy_doggie.png");
   background-size: cover;
   background-color: #cccccc;
@@ -81,51 +81,51 @@ header nav ul a {
   background-position: center; /* start the image from bottom*/
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-}
-.hero .content {
-  text-align: left;
-  position: absolute;
-  top: 60%;
-  font-size: 5em;
-  font: 400;
+  line-height: 20px;
   color: #F2F2F2;
-  line-height: 0%;
+
 }
+
+.content
+{
+  padding-bottom: 3em;
+}
+
+
+.hero .content h1
+{
+  font-weight: 900;
+  font-size: 12em;
+  margin: 0%;
+  line-height: normal;
+}
+
 .hero .content p {
-  font-size: large;
-  position: relative;
-  left: 2em;
+  padding-left: 5px;
+  font-size: 20px; 
+  font-weight: 500;
+  margin: 0%;
 }
 
 
-@media screen and (max-width: 1000px) {
-
-  .hero h1 
-  {
-    font-size: 1em;
-  }
-  
-}
-
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 
 
   .hero
   {
     width: 100%;
   }
+  
 
-  .hero .content
+  .hero .content h1
   {
-    position: relative;
-    height: auto;
-  }
-
-  .hero h1 
-  {
+    font-weight: 900;
+    font-size: 8em;
+    margin: 0%;
     overflow-wrap: break-word; 
-    line-height: 1em;
+    line-height:normal;
   }
+   
+
   
 }
