@@ -100,18 +100,24 @@
 
     <script>
 
+        //https://fjolt.com/article/javascript-multiple-elements-addeventlistener 
         var modal = document.getElementById('myModal');
 
-        var card = document.getElementsByClassName("card"); //like collection of all items 
+        var cards = document.querySelectorAll('.card'); //returns nodelist.  
 
 
-        console.log("gay");
-        modal.style.display = 'block';
-
-        
-        card[1].onclick = function () {
+        let clickEvent = () => 
+        { 
             modal.style.display = "block";
         }
+
+        console.log("gay");
+
+        //for each element, you do the param => expression to listen for clicks
+        cards.forEach( (item) => {
+            item.addEventListener('click', clickEvent);
+            }
+        );  
 
         window.onclick = function (event) {
             if (event.target == modal) {
