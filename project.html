@@ -1,28 +1,43 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/project.css"> <!-- I'm gonna kms -->
     <script src="script/scroll.js"></script>
 </head>
 
 <body>
-  
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <h1>
+                Title
+            </h1>
+            <hr>
+            <p>
+                Some text and images here.
+            </p>
+        </div>
+    </div>
+
+
     <div class="nav-container">
-        
+
         <header>
-            
+
             <!-- this just displays the logo that goes back to the main screen-->
-            <a href="index.html" class = "logo">ZHOU 🌻</a>
+            <a href="index.html" class="logo">Julia Zhou</a>
 
             <nav>
                 <!-- unordered list -->
                 <ul>
-                    <li><a href = "art.html">illustrations</a></li>
-                    <li><a href = "project.htmls">project</a></li>
-                    <li><a href = "info.html">about</a></li>
+                    <li><a href="art.html">illustrations</a></li>
+                    <li><a href="project.htmls">project</a></li>
+                    <li><a href="info.html">about</a></li>
                 </ul>
             </nav>
             <!-- 
@@ -33,11 +48,11 @@
     </div>
 
 
-    <div class = "project">
+    <div class="project">
 
-        <div class = "title"> 
-            Projects 
-            <span> 
+        <div class="title">
+            Projects
+            <span>
                 personal and school projects
             </span>
             <hr>
@@ -45,40 +60,66 @@
 
 
 
-        <div class ="card">
-            <img src = "Images/Barcode.png"> 
+        <div class="card">
+            <img src="Images/Barcode.png">
             <h2>Sample title</h2>
-            <ul class = "types"> 
+            <ul class="types">
                 <li>language1</li>
-                <li>language2</li> 
+                <li>language2</li>
             </ul>
         </div>
 
-        <div class ="card">
-            <img src = "Images/Monke.png"> 
+        <div class="card">
+            <img src="Images/Monke.png">
             <h2>Sample title 2</h2>
-            <ul class = "types"> 
+            <ul class="types">
                 <li>language1</li>
-                <li>language2</li> 
+                <li>language2</li>
             </ul>
         </div>
+
+        <div class="card">
+            <img src="Images/Monke.png">
+            <h2>Sample title 2</h2>
+            <ul class="types">
+                <li>language1</li>
+                <li>language2</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <img src="Images/Monke.png">
+            <h2>Sample title 2</h2>
+            <ul class="types">
+                <li>language1</li>
+                <li>language2</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+
+        var modal = document.getElementById('myModal');
+
+        var card = document.getElementsByClassName("card"); //like collection of all items 
+
+
+        console.log("gay");
+        modal.style.display = 'block';
+
         
-        <div class ="card">
-            <img src = "Images/Monke.png"> 
-            <h2>Sample title 2</h2>
-            <ul class = "types"> 
-                <li>language1</li>
-                <li>language2</li> 
-            </ul>
-        </div>
+        card[1].onclick = function () {
+            modal.style.display = "block";
+        }
 
-        <div class ="card">
-            <img src = "Images/Monke.png"> 
-            <h2>Sample title 2</h2>
-            <ul class = "types"> 
-                <li>language1</li>
-                <li>language2</li> 
-            </ul>
-        </div>
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
 
-    </div> 
+    </script>
+
+
+    <body>
