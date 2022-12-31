@@ -11,18 +11,7 @@
 
 <body>
 
-    <div id="myModal" class="modal">
 
-        <div class="modal-content">
-            <h1>
-                Title
-            </h1>
-            <hr>
-            <p>
-                Some text and images here.
-            </p>
-        </div>
-    </div>
 
 
     <div class="nav-container">
@@ -36,7 +25,7 @@
                 <!-- unordered list -->
                 <ul>
                     <li><a href="art.html">illustrations</a></li>
-                    <li><a href="project.htmls">project</a></li>
+                    <li><a href="project.htmls">projects</a></li>
                     <li><a href="info.html">about</a></li>
                 </ul>
             </nav>
@@ -61,62 +50,100 @@
 
 
         <div class="card">
-            <img src="Images/Barcode.png">
-            <h2>Sample title</h2>
+            <img src="Images/website hero.png">
+            <h2>Personal Website</h2>
             <ul class="types">
-                <li>language1</li>
-                <li>language2</li>
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <img src="Images/drawingRobot.jpg">
+            <h2>EV3 Drawing Robot</h2>
+            <ul class="types">
+                <li>C</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <img src="Images/automatic garbage can.png">
+            <h2>Automatic garbage bin</h2>
+            <ul class="types">
+                <li>C</li>
             </ul>
         </div>
 
         <div class="card">
             <img src="Images/Monke.png">
-            <h2>Sample title 2</h2>
+            <h2>More projects in progress!</h2>
             <ul class="types">
-                <li>language1</li>
-                <li>language2</li>
-            </ul>
-        </div>
 
-        <div class="card">
-            <img src="Images/Monke.png">
-            <h2>Sample title 2</h2>
-            <ul class="types">
-                <li>language1</li>
-                <li>language2</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <img src="Images/Monke.png">
-            <h2>Sample title 2</h2>
-            <ul class="types">
-                <li>language1</li>
-                <li>language2</li>
             </ul>
         </div>
 
     </div>
 
+    <div id="Personal Website" class="modal">
+
+        <div class="modal-content">
+            <h1>
+                Personal Website
+            </h1>
+            <hr>
+            <p>
+                Trying to learn how to make a website, it was pretty fun! 
+            </p>
+        </div>
+    </div>
+
+
+    
+    <div id="EV3 Drawing Robot" class="modal">
+
+        <div class="modal-content">
+            <h1>
+                EV3 Drawing Robot 
+            </h1>
+            <hr>
+            <p>
+                This is our capstone project for mechatronics engineering 1A. We were working 
+                as a group of 4 and were instructed to construct a robot using lego and ev3 brick. 
+            </p>
+        </div>
+    </div>
+
+
+
     <script>
 
+
+        //this allows user to click on card and pops up a corresponding window. 
+
         //https://fjolt.com/article/javascript-multiple-elements-addeventlistener 
-        var modal = document.getElementById('myModal');
+        let modal = document.getElementById('Project 1');
 
         var cards = document.querySelectorAll('.card'); //returns nodelist.  
 
 
-        let clickEvent = () => 
+        let clickEvent = (item) => 
         { 
-            modal.style.display = "block";
+            modal = item;
+            modal.style.display = "block"; // how to select an entire line 
         }
 
-        console.log("gay");
+    
 
         //for each element, you do the param => expression to listen for clicks
+        //add event listener is gayyyyy, you have to envoke a new function that calls the real function. 
+        // () => { your function } 
         cards.forEach( (item) => {
-            item.addEventListener('click', clickEvent);
+            var text = item.getElementsByTagName('h2')[0].textContent; //returns the element, then convert to text. 
+            item.addEventListener('click', () => {clickEvent(document.getElementById(text))});
             }
+
+            //document.getElementById((item.getElementsByTagName('h2')).) 
         );  
 
         window.onclick = function (event) {
@@ -126,6 +153,6 @@
         }
 
     </script>
-
+    <!-- update, i still want to kms UGHHHHHHHHHHHHHHHHHHHHHHHHH-->
 
     <body>
