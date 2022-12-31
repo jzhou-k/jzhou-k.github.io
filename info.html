@@ -5,6 +5,7 @@
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/info.css"> <!-- I'm gonna kms -->
+    <script src = "script/copy.js"></script>
 </head> 
 
 <body> 
@@ -19,7 +20,7 @@
                 <!-- unordered list -->
                 <ul>
                     <li><a href = "art.html">illustrations</a></li>
-                    <li><a href = "project.html">project</a></li>
+                    <li><a href = "project.html">projects</a></li>
                     <li><a href = "info.html">about</a></li>
                 </ul>
             </nav>
@@ -58,21 +59,58 @@
             <li> 
                 <span class = "label"> Contact </span>
                 <div class = "content">
-                    j34zhou@uwaterloo.ca 
+                    <div id = "copyText">j34zhou@uwaterloo.ca
+                        
+                    </div>
+                    <div class = "tooltip">copied to clipboard</div> 
                 </div>
                 
             </li>
             <li> 
                 <span class = "label"> Socials </span>
                 <div class = "content">
-                    <a href = "https://www.instagram.com/kulnifer_/">Instagram </a> DeviantArt Twitter Github LinkedIn 
+                    <a href = "https://www.instagram.com/kulnifer_/">Instagram /</a> 
+                    <a href = "https://www.deviantart.com/kulnifer">DeviantArt /</a> 
+                    <a href="https://twitter.com/kulnifer">Twitter /</a>
+                    <a href="https://github.com/jzhou-k">Github /</a>
+                    <a href="https://www.linkedin.com/in/jiayi-zhou-088b08231/">LinkedIn</a>
+
                 </div>
                 
             </li>
     
         </ul>
     </div> 
+
+
     
+    <script> 
+
+        var copy = document.getElementById('copyText'); 
+
+        copy.addEventListener('click', () => {
+
+            var text = copy.textContent;
+            copyToClipboard(text); 
+            console.log(text);
+
+        })
+
+
+
+        function copyToClipboard(text) 
+        {
+
+            navigator.clipboard.writeText(text); 
+            //replacing ugly alert with nice looking tooltip 
+        }
+
+    
+    
+    </script>
+
+
+
 
 </body>
 

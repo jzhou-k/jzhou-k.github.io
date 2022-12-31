@@ -4,7 +4,7 @@
 //how to switch tabs quickly ? 
 function sayGay () 
 { 
-    let a = "this fucktion says gay";
+    let a = "this says gay";
 
     console.log(a);
 }
@@ -37,7 +37,6 @@ const debounce = (fn) => {
     } 
   };
   
-  //what the fuck is all this shit 
   //Im like the solarized light color theme. I want to use this in my own website > tagging system try out? 
   // Reads out the scroll position and stores it in the data attribute
   // so we can use it in our stylesheets
